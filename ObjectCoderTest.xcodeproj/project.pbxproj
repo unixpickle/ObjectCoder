@@ -10,8 +10,6 @@
 		FA4B2B38148973CB00955D3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4B2B37148973CB00955D3D /* Foundation.framework */; };
 		FA4B2B3B148973CB00955D3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B2B3A148973CB00955D3D /* main.m */; };
 		FA4B2B3F148973CB00955D3D /* ObjectCoderTest.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = FA4B2B3E148973CB00955D3D /* ObjectCoderTest.1 */; };
-		FA4B2B481489741200955D3D /* NSObject+IvarList.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B2B471489741200955D3D /* NSObject+IvarList.m */; };
-		FA4B2B4B148975EE00955D3D /* OCIvarInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B2B4A148975EE00955D3D /* OCIvarInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,10 +31,6 @@
 		FA4B2B3A148973CB00955D3D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FA4B2B3D148973CB00955D3D /* ObjectCoderTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjectCoderTest-Prefix.pch"; sourceTree = "<group>"; };
 		FA4B2B3E148973CB00955D3D /* ObjectCoderTest.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ObjectCoderTest.1; sourceTree = "<group>"; };
-		FA4B2B461489741200955D3D /* NSObject+IvarList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+IvarList.h"; sourceTree = "<group>"; };
-		FA4B2B471489741200955D3D /* NSObject+IvarList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+IvarList.m"; sourceTree = "<group>"; };
-		FA4B2B49148975ED00955D3D /* OCIvarInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCIvarInfo.h; sourceTree = "<group>"; };
-		FA4B2B4A148975EE00955D3D /* OCIvarInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCIvarInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,12 +92,16 @@
 		FA4B2B45148973E100955D3D /* ObjectCoder */ = {
 			isa = PBXGroup;
 			children = (
-				FA4B2B461489741200955D3D /* NSObject+IvarList.h */,
-				FA4B2B471489741200955D3D /* NSObject+IvarList.m */,
-				FA4B2B49148975ED00955D3D /* OCIvarInfo.h */,
-				FA4B2B4A148975EE00955D3D /* OCIvarInfo.m */,
+				FA4B2B4D1489812B00955D3D /* Ivars */,
 			);
 			path = ObjectCoder;
+			sourceTree = "<group>";
+		};
+		FA4B2B4D1489812B00955D3D /* Ivars */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Ivars;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,8 +155,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA4B2B3B148973CB00955D3D /* main.m in Sources */,
-				FA4B2B481489741200955D3D /* NSObject+IvarList.m in Sources */,
-				FA4B2B4B148975EE00955D3D /* OCIvarInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
