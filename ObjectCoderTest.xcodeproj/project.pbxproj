@@ -1,0 +1,236 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA4B2B38148973CB00955D3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4B2B37148973CB00955D3D /* Foundation.framework */; };
+		FA4B2B3B148973CB00955D3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B2B3A148973CB00955D3D /* main.m */; };
+		FA4B2B3F148973CB00955D3D /* ObjectCoderTest.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = FA4B2B3E148973CB00955D3D /* ObjectCoderTest.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA4B2B31148973CB00955D3D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				FA4B2B3F148973CB00955D3D /* ObjectCoderTest.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FA4B2B33148973CB00955D3D /* ObjectCoderTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjectCoderTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA4B2B37148973CB00955D3D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FA4B2B3A148973CB00955D3D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA4B2B3D148973CB00955D3D /* ObjectCoderTest-Prefix.pch */ = {isa = PBXFileReference; path = "ObjectCoderTest-Prefix.pch"; sourceTree = "<group>"; };
+		FA4B2B3E148973CB00955D3D /* ObjectCoderTest.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ObjectCoderTest.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA4B2B30148973CB00955D3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA4B2B38148973CB00955D3D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA4B2B28148973CB00955D3D = {
+			isa = PBXGroup;
+			children = (
+				FA4B2B39148973CB00955D3D /* ObjectCoderTest */,
+				FA4B2B36148973CB00955D3D /* Frameworks */,
+				FA4B2B34148973CB00955D3D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA4B2B34148973CB00955D3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA4B2B33148973CB00955D3D /* ObjectCoderTest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA4B2B36148973CB00955D3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA4B2B37148973CB00955D3D /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA4B2B39148973CB00955D3D /* ObjectCoderTest */ = {
+			isa = PBXGroup;
+			children = (
+				FA4B2B3A148973CB00955D3D /* main.m */,
+				FA4B2B3E148973CB00955D3D /* ObjectCoderTest.1 */,
+				FA4B2B3C148973CB00955D3D /* Supporting Files */,
+			);
+			path = ObjectCoderTest;
+			sourceTree = "<group>";
+		};
+		FA4B2B3C148973CB00955D3D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA4B2B3D148973CB00955D3D /* ObjectCoderTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA4B2B32148973CB00955D3D /* ObjectCoderTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA4B2B42148973CB00955D3D /* Build configuration list for PBXNativeTarget "ObjectCoderTest" */;
+			buildPhases = (
+				FA4B2B2F148973CB00955D3D /* Sources */,
+				FA4B2B30148973CB00955D3D /* Frameworks */,
+				FA4B2B31148973CB00955D3D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObjectCoderTest;
+			productName = ObjectCoderTest;
+			productReference = FA4B2B33148973CB00955D3D /* ObjectCoderTest */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA4B2B2A148973CB00955D3D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = FA4B2B2D148973CB00955D3D /* Build configuration list for PBXProject "ObjectCoderTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FA4B2B28148973CB00955D3D;
+			productRefGroup = FA4B2B34148973CB00955D3D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA4B2B32148973CB00955D3D /* ObjectCoderTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA4B2B2F148973CB00955D3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA4B2B3B148973CB00955D3D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FA4B2B40148973CB00955D3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FA4B2B41148973CB00955D3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FA4B2B43148973CB00955D3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ObjectCoderTest/ObjectCoderTest-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FA4B2B44148973CB00955D3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ObjectCoderTest/ObjectCoderTest-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA4B2B2D148973CB00955D3D /* Build configuration list for PBXProject "ObjectCoderTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA4B2B40148973CB00955D3D /* Debug */,
+				FA4B2B41148973CB00955D3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA4B2B42148973CB00955D3D /* Build configuration list for PBXNativeTarget "ObjectCoderTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA4B2B43148973CB00955D3D /* Debug */,
+				FA4B2B44148973CB00955D3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA4B2B2A148973CB00955D3D /* Project object */;
+}

@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'ObjectCoderTest' target in the 'ObjectCoderTest' project
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+#endif
