@@ -15,7 +15,10 @@
 	NSArray * array;
 }
 
-- (id)initWithNumber:(int)aNumber message:(NSString *)aMessage dictionary:(NSDictionary *)aDictionary array:(NSArray *)anArray;
+- (id)initWithNumber:(int)aNumber 
+			 message:(NSString *)aMessage 
+		  dictionary:(NSDictionary *)aDictionary 
+			   array:(NSArray *)anArray;
 
 - (void)printInfo;
 
