@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA472F081489A5A8004E288E /* NSNumber+ObjectCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FA472F071489A5A8004E288E /* NSNumber+ObjectCoder.m */; };
 		FA4B2B38148973CB00955D3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4B2B37148973CB00955D3D /* Foundation.framework */; };
 		FA4B2B3B148973CB00955D3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B2B3A148973CB00955D3D /* main.m */; };
 		FA4B2B3F148973CB00955D3D /* ObjectCoderTest.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = FA4B2B3E148973CB00955D3D /* ObjectCoderTest.1 */; };
@@ -14,6 +15,8 @@
 		FA4B2B591489824700955D3D /* OCIvarInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B2B571489824700955D3D /* OCIvarInfo.m */; };
 		FA4B2B5D1489829800955D3D /* NSObject+ObjectCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B2B5C1489829800955D3D /* NSObject+ObjectCoder.m */; };
 		FA4B2B601489830D00955D3D /* OCPrimitive.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B2B5F1489830D00955D3D /* OCPrimitive.m */; };
+		FAD9E0D114899F690097225F /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9E0D014899F690097225F /* TestClass.m */; };
+		FAD9E0D614899FB50097225F /* NSString+ObjectCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9E0D514899FB50097225F /* NSString+ObjectCoder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +33,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FA472F061489A5A8004E288E /* NSNumber+ObjectCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+ObjectCoder.h"; sourceTree = "<group>"; };
+		FA472F071489A5A8004E288E /* NSNumber+ObjectCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+ObjectCoder.m"; sourceTree = "<group>"; };
 		FA4B2B33148973CB00955D3D /* ObjectCoderTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjectCoderTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA4B2B37148973CB00955D3D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FA4B2B3A148973CB00955D3D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -43,6 +48,10 @@
 		FA4B2B5C1489829800955D3D /* NSObject+ObjectCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ObjectCoder.m"; sourceTree = "<group>"; };
 		FA4B2B5E1489830D00955D3D /* OCPrimitive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCPrimitive.h; sourceTree = "<group>"; };
 		FA4B2B5F1489830D00955D3D /* OCPrimitive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCPrimitive.m; sourceTree = "<group>"; };
+		FAD9E0CF14899F690097225F /* TestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClass.h; sourceTree = "<group>"; };
+		FAD9E0D014899F690097225F /* TestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
+		FAD9E0D414899FB50097225F /* NSString+ObjectCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ObjectCoder.h"; sourceTree = "<group>"; };
+		FAD9E0D514899FB50097225F /* NSString+ObjectCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ObjectCoder.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +98,8 @@
 				FA4B2B3A148973CB00955D3D /* main.m */,
 				FA4B2B3E148973CB00955D3D /* ObjectCoderTest.1 */,
 				FA4B2B3C148973CB00955D3D /* Supporting Files */,
+				FAD9E0CF14899F690097225F /* TestClass.h */,
+				FAD9E0D014899F690097225F /* TestClass.m */,
 			);
 			path = ObjectCoderTest;
 			sourceTree = "<group>";
@@ -104,6 +115,7 @@
 		FA4B2B45148973E100955D3D /* ObjectCoder */ = {
 			isa = PBXGroup;
 			children = (
+				FAD9E0D314899FA10097225F /* BasicObjects */,
 				FA4B2B531489824700955D3D /* Ivars */,
 				FA4B2B5A1489825300955D3D /* Encoding */,
 			);
@@ -130,6 +142,17 @@
 				FA4B2B5F1489830D00955D3D /* OCPrimitive.m */,
 			);
 			path = Encoding;
+			sourceTree = "<group>";
+		};
+		FAD9E0D314899FA10097225F /* BasicObjects */ = {
+			isa = PBXGroup;
+			children = (
+				FAD9E0D414899FB50097225F /* NSString+ObjectCoder.h */,
+				FAD9E0D514899FB50097225F /* NSString+ObjectCoder.m */,
+				FA472F061489A5A8004E288E /* NSNumber+ObjectCoder.h */,
+				FA472F071489A5A8004E288E /* NSNumber+ObjectCoder.m */,
+			);
+			path = BasicObjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +210,9 @@
 				FA4B2B591489824700955D3D /* OCIvarInfo.m in Sources */,
 				FA4B2B5D1489829800955D3D /* NSObject+ObjectCoder.m in Sources */,
 				FA4B2B601489830D00955D3D /* OCPrimitive.m in Sources */,
+				FAD9E0D114899F690097225F /* TestClass.m in Sources */,
+				FAD9E0D614899FB50097225F /* NSString+ObjectCoder.m in Sources */,
+				FA472F081489A5A8004E288E /* NSNumber+ObjectCoder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

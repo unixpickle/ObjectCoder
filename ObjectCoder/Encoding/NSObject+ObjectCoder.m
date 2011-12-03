@@ -12,8 +12,8 @@
 
 @implementation NSObject (ObjectCoder)
 
-+ (NSObject *)objectByDecodingObjectCoderRootObject:(NSDictionary *)serialized {
-	if (![[serialized objectForKey:@"type"] isEqualToString:kObjectEncoded]) {
++ (id)objectByDecodingObjectCoderRootObject:(NSDictionary *)serialized {
+	if (!OCTypeEncodingIsObject([serialized objectForKey:@"type"])) {
 		return nil;
 	}
 	NSString * className = [serialized objectForKey:@"class"];
@@ -34,7 +34,7 @@
 		NSDictionary * ivarDict = [serialized objectForKey:@"ivars"];
 		for (NSString * ivarName in ivarDict) {
 			NSDictionary * encodedValue = [ivarDict objectForKey:ivarName];
-			if ([[encodedValue objectForKey:@"type"] isEqualToString:kObjectEncoded]) {
+			if (OCTypeEncodingIsObject([encodedValue objectForKey:@"type"])) {
 				// it's a sub-object instance variable
 				Class class = NSClassFromString([encodedValue objectForKey:@"class"]);
 				if (class) {
@@ -68,7 +68,7 @@
 		if (OCIvarIsPrimitive(ivar)) {
 			encoded = OCEncodePrimitiveIvar(self, ivar);
 		} else {
-			if ([ivar.typeEncoding isEqualToString:@"@"]) {
+			if (OCTypeEncodingIsObject(ivar.typeEncoding)) {
 				id object = [self getInstanceVariableObject:ivar.name];
 				encoded = [object objectCoderSerialization];
 			}

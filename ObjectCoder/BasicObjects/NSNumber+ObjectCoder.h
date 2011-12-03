@@ -1,5 +1,5 @@
 //
-//  NSObject+ObjectCoder.h
+//  NSNumber+ObjectCoder.h
 //  ObjectCoderTest
 //
 //  Created by Alex Nichol on 12/2/11.
@@ -7,14 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NSObject+IvarList.h"
-#import "OCPrimitive.h"
 
-@interface NSObject (ObjectCoder)
+@interface NSNumber (ObjectCoder)
 
-+ (id)objectByDecodingObjectCoderRootObject:(NSDictionary *)serialized;
 - (NSDictionary *)objectCoderSerialization;
-
 - (id)initWithObjectCoderSerialization:(NSDictionary *)serialized;
 
 @end

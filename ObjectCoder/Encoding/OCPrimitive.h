@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "NSObject+IvarList.h"
 
+BOOL OCTypeEncodingIsObject (NSString * type);
 BOOL OCIvarIsPrimitive (OCIvarInfo * anIvar);
 NSDictionary * OCEncodePrimitiveIvar (NSObject * object, OCIvarInfo * anIvar);
 BOOL OCDecodePrimitiveIvar (id object, NSString * ivarName, NSDictionary * ivarInfo);

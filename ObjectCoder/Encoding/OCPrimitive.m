@@ -8,6 +8,13 @@
 
 #import "OCPrimitive.h"
 
+BOOL OCTypeEncodingIsObject (NSString * type) {
+	if ([type hasPrefix:@"@"]) {
+		return YES;
+	}
+	return NO;
+}
+
 BOOL OCIvarIsPrimitive (OCIvarInfo * anIvar) {
 	NSString * type = anIvar.typeEncoding;
 	const char * primTypes[] = {

@@ -7,16 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NSObject+ObjectCoder.h"
+#import "TestClass.h"
 
-int main (int argc, const char * argv[])
-{
-
+int main (int argc, const char * argv[]) {
 	@autoreleasepool {
-	    
-	    // insert code here...
-	    NSLog(@"Hello, World!");
-	    
+		TestClass * tc = [[TestClass alloc] initWithNumber:1337
+												   message:@"This is an epic h4x"];
+		[tc printInfo];
+		NSDictionary * serialized = [tc objectCoderSerialization];
+		TestClass * dectc = [TestClass objectByDecodingObjectCoderRootObject:serialized];
+		[dectc printInfo];
 	}
-    return 0;
+	return 0;
 }
 
