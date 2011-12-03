@@ -11,7 +11,10 @@
 
 BOOL OCTypeEncodingIsObject (NSString * type);
 BOOL OCIvarIsPrimitive (OCIvarInfo * anIvar);
+
+NSDictionary * OCEncodePrimitive (NSString * className, NSString * type, id pvalue);
 NSDictionary * OCEncodePrimitiveIvar (NSObject * object, OCIvarInfo * anIvar);
-BOOL OCDecodePrimitiveIvar (id object, NSString * ivarName, NSDictionary * ivarInfo);
+BOOL OCDecodeAndSetPrimitiveIvar (id object, NSString * ivarName, NSDictionary * ivarInfo);
+
 NSNumber * OCNumberFromPtr (void * ptr);
 void * OCPtrFromNumber (NSNumber * number);

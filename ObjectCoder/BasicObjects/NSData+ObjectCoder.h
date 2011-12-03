@@ -1,15 +1,15 @@
 //
-//  NSString+ObjectCoder.h
+//  NSData+ObjectCoder.h
 //  ObjectCoderTest
 //
-//  Created by Alex Nichol on 12/2/11.
+//  Created by Alex Nichol on 12/3/11.
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import "OCPrimitive.h"
 
-@interface NSString (ObjectCoder)
+@interface NSData (ObjectCoder)
 
 - (NSDictionary *)objectCoderSerialization;
 - (id)initWithObjectCoderSerialization:(NSDictionary *)serialized;

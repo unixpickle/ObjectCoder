@@ -11,8 +11,7 @@
 @implementation NSNumber (ObjectCoder)
 
 - (NSDictionary *)objectCoderSerialization {
-	return [NSDictionary dictionaryWithObjectsAndKeys:[NSString stringWithUTF8String:@encode(id)], @"type",
-			@"NSNumber", @"class", self, @"pvalue", nil];
+	return OCEncodePrimitive(@"NSNumber", [NSString stringWithUTF8String:@encode(id)], self);	
 }
 
 - (id)initWithObjectCoderSerialization:(NSDictionary *)serialized {

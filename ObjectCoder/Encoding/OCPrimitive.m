@@ -8,6 +8,8 @@
 
 #import "OCPrimitive.h"
 
+#pragma mark Type Checking
+
 BOOL OCTypeEncodingIsObject (NSString * type) {
 	if ([type hasPrefix:@"@"]) {
 		return YES;
@@ -44,6 +46,18 @@ BOOL OCIvarIsPrimitive (OCIvarInfo * anIvar) {
 	return NO;
 }
 
+#pragma mark Encoding
+
+NSDictionary * OCEncodePrimitive (NSString * className, NSString * type, id pvalue) {
+	if (className) {
+		return [NSDictionary dictionaryWithObjectsAndKeys:className, @"class",
+				type, @"type", pvalue, @"pvalue", nil];
+	} else {
+		return [NSDictionary dictionaryWithObjectsAndKeys:type, @"type",
+				pvalue, @"pvalue", nil];		
+	}
+}
+
 NSDictionary * OCEncodePrimitiveIvar (NSObject * object, OCIvarInfo * anIvar) {
 	NSNumber * value = nil;
 	const char * typeStr = [anIvar.typeEncoding UTF8String];
@@ -78,11 +92,12 @@ NSDictionary * OCEncodePrimitiveIvar (NSObject * object, OCIvarInfo * anIvar) {
 		value = [NSNumber numberWithDouble:[object getInstanceVariableDouble:[anIvar name]]];
 	}
 	if (!value) return nil;
-	return [NSDictionary dictionaryWithObjectsAndKeys:anIvar.typeEncoding, @"type",
-			value, @"pvalue", nil];
+	return OCEncodePrimitive(nil, anIvar.typeEncoding, value);
 }
 
-BOOL OCDecodePrimitiveIvar (id object, NSString * ivarName, NSDictionary * ivarInfo) {
+#pragma mark Decoding
+
+BOOL OCDecodeAndSetPrimitiveIvar (id object, NSString * ivarName, NSDictionary * ivarInfo) {
 	NSNumber * pvalue = [ivarInfo objectForKey:@"pvalue"];
 	if (![pvalue isKindOfClass:[NSNumber class]]) {
 		return NO;
@@ -121,6 +136,8 @@ BOOL OCDecodePrimitiveIvar (id object, NSString * ivarName, NSDictionary * ivarI
 	}
 	return YES;
 }
+
+#pragma mark Pointers
 
 NSNumber * OCNumberFromPtr (void * ptr) {
 #if __WORDSIZE == 64

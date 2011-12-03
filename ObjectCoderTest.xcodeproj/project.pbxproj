@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA2EEC28148AB0160092C8DE /* NSArray+ObjectCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2EEC27148AB0160092C8DE /* NSArray+ObjectCoder.m */; };
+		FA2EEC2C148AB5630092C8DE /* NSData+ObjectCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2EEC2B148AB5630092C8DE /* NSData+ObjectCoder.m */; };
+		FA2EEC2F148ABBD70092C8DE /* NSDictionary+ObjectCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2EEC2E148ABBD70092C8DE /* NSDictionary+ObjectCoder.m */; };
 		FA472F081489A5A8004E288E /* NSNumber+ObjectCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FA472F071489A5A8004E288E /* NSNumber+ObjectCoder.m */; };
 		FA4B2B38148973CB00955D3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4B2B37148973CB00955D3D /* Foundation.framework */; };
 		FA4B2B3B148973CB00955D3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B2B3A148973CB00955D3D /* main.m */; };
@@ -33,6 +36,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FA2EEC26148AB0160092C8DE /* NSArray+ObjectCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ObjectCoder.h"; sourceTree = "<group>"; };
+		FA2EEC27148AB0160092C8DE /* NSArray+ObjectCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ObjectCoder.m"; sourceTree = "<group>"; };
+		FA2EEC2A148AB5630092C8DE /* NSData+ObjectCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ObjectCoder.h"; sourceTree = "<group>"; };
+		FA2EEC2B148AB5630092C8DE /* NSData+ObjectCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ObjectCoder.m"; sourceTree = "<group>"; };
+		FA2EEC2D148ABBD70092C8DE /* NSDictionary+ObjectCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ObjectCoder.h"; sourceTree = "<group>"; };
+		FA2EEC2E148ABBD70092C8DE /* NSDictionary+ObjectCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ObjectCoder.m"; sourceTree = "<group>"; };
 		FA472F061489A5A8004E288E /* NSNumber+ObjectCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+ObjectCoder.h"; sourceTree = "<group>"; };
 		FA472F071489A5A8004E288E /* NSNumber+ObjectCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+ObjectCoder.m"; sourceTree = "<group>"; };
 		FA4B2B33148973CB00955D3D /* ObjectCoderTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjectCoderTest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +160,12 @@
 				FAD9E0D514899FB50097225F /* NSString+ObjectCoder.m */,
 				FA472F061489A5A8004E288E /* NSNumber+ObjectCoder.h */,
 				FA472F071489A5A8004E288E /* NSNumber+ObjectCoder.m */,
+				FA2EEC2A148AB5630092C8DE /* NSData+ObjectCoder.h */,
+				FA2EEC2B148AB5630092C8DE /* NSData+ObjectCoder.m */,
+				FA2EEC26148AB0160092C8DE /* NSArray+ObjectCoder.h */,
+				FA2EEC27148AB0160092C8DE /* NSArray+ObjectCoder.m */,
+				FA2EEC2D148ABBD70092C8DE /* NSDictionary+ObjectCoder.h */,
+				FA2EEC2E148ABBD70092C8DE /* NSDictionary+ObjectCoder.m */,
 			);
 			path = BasicObjects;
 			sourceTree = "<group>";
@@ -213,6 +228,9 @@
 				FAD9E0D114899F690097225F /* TestClass.m in Sources */,
 				FAD9E0D614899FB50097225F /* NSString+ObjectCoder.m in Sources */,
 				FA472F081489A5A8004E288E /* NSNumber+ObjectCoder.m in Sources */,
+				FA2EEC28148AB0160092C8DE /* NSArray+ObjectCoder.m in Sources */,
+				FA2EEC2C148AB5630092C8DE /* NSData+ObjectCoder.m in Sources */,
+				FA2EEC2F148ABBD70092C8DE /* NSDictionary+ObjectCoder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

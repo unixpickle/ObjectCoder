@@ -48,7 +48,7 @@
 				}
 			} else {
 				// it's a primitive instance variable
-				if (!OCDecodePrimitiveIvar(self, ivarName, encodedValue)) {
+				if (!OCDecodeAndSetPrimitiveIvar(self, ivarName, encodedValue)) {
 #if !__has_feature(objc_arc)
 					[super dealloc];
 #endif

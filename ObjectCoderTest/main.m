@@ -12,8 +12,13 @@
 
 int main (int argc, const char * argv[]) {
 	@autoreleasepool {
+		NSDictionary * aDict = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInt:9000], @"power_level",
+								@"ALL YOUR BASE ARE BELONG TO US", @"message", nil];
+		NSArray * anArray = [NSArray arrayWithObjects:@"This", @"is", @"cool", nil];
 		TestClass * tc = [[TestClass alloc] initWithNumber:1337
-												   message:@"This is an epic h4x"];
+												   message:@"This is an epic h4x"
+												dictionary:aDict
+													 array:anArray];
 		[tc printInfo];
 		NSDictionary * serialized = [tc objectCoderSerialization];
 		TestClass * dectc = [TestClass objectByDecodingObjectCoderRootObject:serialized];

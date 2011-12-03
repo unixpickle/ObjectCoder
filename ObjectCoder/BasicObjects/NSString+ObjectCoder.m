@@ -15,8 +15,7 @@
 	if ([self isKindOfClass:[NSMutableString class]]) {
 		className = @"NSMutableString";
 	}
-	return [NSDictionary dictionaryWithObjectsAndKeys:[NSString stringWithUTF8String:@encode(id)], @"type",
-													  className, @"class", self, @"pvalue", nil];
+	return OCEncodePrimitive(className, [NSString stringWithUTF8String:@encode(id)], self);
 }
 
 - (id)initWithObjectCoderSerialization:(NSDictionary *)serialized {
