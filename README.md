@@ -3,9 +3,7 @@ ObjectCoder
 
 With ObjectCoder, you can encode any Objective-C object on the fly, as long as it conforms to several guidelines.  Unlike NSCoding and similar archive methods, ObjectCoder makes use of the dynamic Objective-C runtime, automatically encoding instance variables for you.  ObjectCoder has pre-built intelligence on how to encode basic datatypes like int, char, etc.  It also comes with some basic custom encoders for root data classes such as NSNumber and NSString.  This means that you will already be able to encode most of your objects without additional custom encoding code.
 
-Adding custom encoders is easy, too! Simply create a new category on your custom class called *ObjectCoder*, and implement the methods `objectCoderSerialization` and `initWithObjectCoderSerialization:`. See an existing implementation of this category (e.g. NSString+ObjectCoder.m) for guidance.
-
-**NOTE**: ObjectCoder is currently under development. Because of this, it is not suggested that you use ObjectCoder until development is complete, or at least until this message is removed.
+Adding custom encoders is easy, too! Simply create a new category on your custom class called *ObjectCoder*, and implement the methods `objectCoderSerialization` and `initWithObjectCoderSerialization:`. See an existing implementation of this category (e.g. NSString+ObjectCoder.m, NSArray+ObjectCoder.m, etc) for guidance.
 
 Usage
 =====
