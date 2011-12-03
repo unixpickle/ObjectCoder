@@ -40,9 +40,12 @@
 				if (class) {
 					id instance = [[class alloc] initWithObjectCoderSerialization:encodedValue];
 					[self setInstanceVariable:ivarName withObject:instance];
+#if !__has_feature(objc_arc)
+					[instance release];
+#endif
 				} else {
 #if !__has_feature(objc_arc)
-					[super dealloc];
+					[self dealloc];
 #endif
 					return nil;
 				}
@@ -50,7 +53,7 @@
 				// it's a primitive instance variable
 				if (!OCDecodeAndSetPrimitiveIvar(self, ivarName, encodedValue)) {
 #if !__has_feature(objc_arc)
-					[super dealloc];
+					[self dealloc];
 #endif
 					return nil;
 				}
@@ -61,7 +64,7 @@
 }
 
 - (NSDictionary *)objectCoderSerialization {
-	NSMutableDictionary * encodedIvars = [[NSMutableDictionary alloc] init];
+	NSMutableDictionary * encodedIvars = [NSMutableDictionary dictionary];
 	NSArray * ivars = [self instanceVariables];
 	for (OCIvarInfo * ivar in ivars) {
 		NSDictionary * encoded = nil;

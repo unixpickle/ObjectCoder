@@ -287,6 +287,7 @@
 		FA4B2B43148973CB00955D3D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ObjectCoderTest/ObjectCoderTest-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -296,6 +297,7 @@
 		FA4B2B44148973CB00955D3D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ObjectCoderTest/ObjectCoderTest-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";

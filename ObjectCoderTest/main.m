@@ -23,6 +23,10 @@ int main (int argc, const char * argv[]) {
 		NSDictionary * serialized = [tc objectCoderSerialization];
 		TestClass * dectc = [TestClass objectByDecodingObjectCoderRootObject:serialized];
 		[dectc printInfo];
+		
+#if !__has_feature(objc_arc)
+		[tc release];
+#endif
 	}
 	return 0;
 }

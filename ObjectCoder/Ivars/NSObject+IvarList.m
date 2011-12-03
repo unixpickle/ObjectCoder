@@ -139,6 +139,9 @@
 
 - (void)setInstanceVariable:(NSString *)ivarName withObject:(id)anObject {
 	object_setIvar(self, [self getInstanceVariable:ivarName], anObject);
+#if !__has_feature(objc_arc)
+	[anObject retain];
+#endif
 }
 
 #pragma mark Scalar (Unsigned)
